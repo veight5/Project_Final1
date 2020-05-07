@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+</head>
+<header>
+
+    <h1 id="Title1"><a href="Index.html" style="color: grey;">INF 250 NEWS</a></h1>
+
+    <div class="Menu">
+        <a class="active" href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+        <a href="Weather.html"><i class="WeatherM"></i> Weather </a> 
+        <a href="News.html"><i class="NEWSM"></i> NEWS </a>
+        <a href="Sports.html"><i class="SportsM"></i> Sports </a>
+        <a href="Contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
+
+</header>
+
+<body>
+    <Section>
+        <h1> Here at INF 250, We Pride Ourselves on Providng the best NEWS. </h1>
+        <h2> For feedback, questions and any other comments please fill out this page and we wil get back to you as soon as possible! </h2>
+    </Section>
+
+    <Aside>
+        <img id="ThankYouIMG" src="IMG/th (47).jpg">
+    </Aside>
+
+    <div class="ContactPage">
+        <form action="https://rest-api-ex.herokuapp.com/all" method="POST">
+
+        <h1> <u>Contact Information</u> </h1>
+
+    
+
+            <div id="SufixGroup">
+                <label for="Sufix"> Name Sufix </label>
+                    <select name="Sufix" id="SufixGroup"> 
+                        <option value="Mr."> Mr. </option>
+                        <option value="Mrs."> Mrs. </option>
+                        <option value="Ms."> Ms. </option>
+                        <option value="Dr."> Dr. </option>
+                    </select>
+            </div>  
+    <br>
+
+        <div id="MEM-Info">
+            <label for="First Name"> First Name </label>
+            <input type="text" name="First Name" Id="First-Name" placeholder="First Name" required>
+        </div>
+
+    <br>
+
+        <div>
+            <label for="Last Name"> Last Name </label>
+            <input type="text" name="Email" id="Last-Name" placeholder="Last Name" required>
+        </div>
+
+    <br>  
+
+        <div> 
+            <label for="Address"> Address </label>
+            <input type="text" name="Address" Id="Address" placeholder="Street Address" required>
+        </div>
+
+    <br>
+
+        <div>
+            <label for="State"> State </label>
+            <input type="text" name="State" Id="State" placeholder="2-Character Code" required>
+        </div>
+
+    <br>
+
+        <div>
+            <Label for="Zip-Code"> Zip-Code </Label>
+            <input type="number" name="Zip-Code" id="Zip-Code" required>
+        </div>
+
+    <br>
+
+        <div> 
+           <label for="Phone"> Phone Number </label>
+           <input type="tel" name="Phone" id="Phone" placeholder="xxx-xxx-xxxx">
+        </div>
+
+    <br>
+
+        <div id="Membership">
+            <label for="Issues"> Reason or Issues </label>
+            <select name="Issues" id="Issues"> 
+                <option value="Storylines"> Storylines </option>
+                <option value="Complaints"> Complaints </option>
+                <option value="Issues"> Issues </option>
+                <option value="Praise "> Praise </option>
+            </select>
+        </div>
+    
+        <br>
+
+        <label for="Comments"> Comments </label>
+        <br>
+        <input type="textarea" id="Comments" name="Comments" placeholder="Write Coments Here!">
+    <br>
+    <br>
+    <br>
+
+        <div>
+            <label for="Starting Date"> Date</label>
+            <input type="date" name="Starting-Date" id="Starting-Date" min="2019-04-19" placeholder="mm/dd/yyyy">
+        </div>
+        <br></br>
+        </div>
+
+        <br></br>
+        
+            <p> Submit!</p>
+
+                <button class="Reset" type="reset"> Reset </button>
+                <button class="Submit" type="submit"> Submit </button>
+          
+        </form>
+    </div>
+    
+</body>
+<br>
+<br>
+
+
+<footer class="Foot"> Jake Vieira &copy; 2020 </footer>
+
+</html>
